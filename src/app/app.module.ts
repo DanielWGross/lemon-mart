@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { BrowserModule } from '@angular/platform-browser'
@@ -25,6 +26,7 @@ import { UserModule } from './user/user.module'
     InventoryModule,
     PosModule,
     UserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
