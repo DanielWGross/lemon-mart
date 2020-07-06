@@ -11,22 +11,17 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$lemon-mart-primary: mat-palette($mat-indigo);
-$lemon-mart-accent: mat-palette($mat-pink, A200, A100, A400);
+$lemon-mart-primary: mat-palette($mat-green, 800);
+$lemon-mart-accent: mat-palette($mat-lime, A400);
 
 // The warn palette is optional (defaults to red).
 $lemon-mart-warn: mat-palette($mat-red);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
+// Create the theme object (a Sass map containing all of the palettes).
 $lemon-mart-theme: mat-light-theme(
-  (
-    color: (
-      primary: $lemon-mart-primary,
-      accent: $lemon-mart-accent,
-      warn: $lemon-mart-warn,
-    ),
-  )
+  $lemon-mart-primary,
+  $lemon-mart-accent,
+  $lemon-mart-warn
 );
 
 // Include theme styles for core and each component used in your app.
