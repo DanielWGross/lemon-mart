@@ -19,6 +19,19 @@ const routes: Routes = [
     loadChildren: () => import('./manager/manager.module').then((m) => m.ManagerModule),
   },
   {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
+  },
+  {
+    path: 'pos',
+    loadChildren: () => import('./pos/pos.module').then((m) => m.PosModule),
+  },
+  {
+    path: 'inventory',
+    loadChildren: () =>
+      import('./inventory/inventory.module').then((m) => m.InventoryModule),
+  },
+  {
     path: '**',
     component: PageNotFoundComponent,
   },
